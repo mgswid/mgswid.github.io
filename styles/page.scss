@@ -1,0 +1,20 @@
+/*
+ *  Page Transition
+ *  Copyright 2017-2022 MGSWID.
+ */
+.page {
+	.page_element {
+		animation-duration: 0.25s;
+		transition-timing-function: all ease-in-out;
+		animation-fill-mode: both;
+	}
+	.page_element--fadein {
+    	animation-name: fadeIn;
+	}
+	.page_element--fadeinup {
+    	animation-name: fadeInUp;
+	}
+	.page_element--fadeinright {
+    	animation-name: fadeInRight;
+	}
+}

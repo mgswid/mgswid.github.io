@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url('fonts.min.css');
+/*
+ *  MGSWID v1.3 (https://mgswid.github.io/)
+ *  Copyright 2017-2022 MGSWID.
+ */
+:root {
+	--bg-light: #FFFFFF;
+	--bg-dark: #212121;
+	--color-black: #000;
+	--color-white: #FFFFFF;
+	--color-grey: #616161;
+	--color-light: #9E9E9E;
+	--text-line-height: 1.75;
+	--font-regular: "IBMPlexSans-Regular";
+	--font-medium: "IBMPlexSans-Medium";
+	--font-semibold: "IBMPlexSans-Semibold";
+	--font-bold: "IBMPlexSans-Bold";
+}
+html{scroll-behavior:smooth}body{padding-top:4rem;font-family:var(--font-regular);line-height:var(--text-line-height)}@media (min-width:576px){body{padding-top:5rem}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes fadeInUp{0%{opacity:0;transform:translate3d(0,100%,0)}100%{opacity:1;transform:none}}@keyframes fadeInRight{0%{opacity:0;transform:translate3d(100%,0,0)}100%{opacity:1;transform:none}}.light-theme{background-color:var(--bg-light)!important;color:var(--color-black)!important;transition:all ease-in-out .2s}.dark-theme,.dark-theme .navbar,.dark-theme a,.dark-theme a:hover,.dark-theme .text-muted,.dark-theme .navbar-brand,.dark-theme .navbar-brand:hover,.dark-theme .navbar-light .navbar-nav a.nav-link,.dark-theme .gradient-border-blue,.dark-theme .gradient-border-green,.dark-theme .gradient-border-orange,.dark-theme .list-group-item{background-color:var(--bg-dark)!important;color:var(--color-white)!important;transition:all ease-in-out .2s}.dark-theme .border-bottom{border-bottom:1px solid #424242!important}.dark-theme .border-top{border-top:1px solid #424242!important}.dark-theme .toggler-icon{background-color:var(--bg-light)!important}*{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto}hr{margin:1.5rem 0;background-color:var(--color-light)}.container{max-width:720px}
+
+/*
+ *  Typography
+ *  Copyright 2017-2022 MGSWID.
+ */
+h1,h2,h3,h4,h5,h6{font-family:var(--font-bold)}a{font-family:var(--font-medium);text-decoration:none;outline:0;box-shadow:none;color:var(--color-black)}a:focus,a:hover{color:var(--color-black);transition:all ease-in-out .2s}
+
+/*
+ *  Header
+ *  Copyright 2017-2022 MGSWID.
+ */
+.navbar{background-color:var(--bg-light)}.navbar-light .navbar-nav a.nav-link{color:var(--color-black)}.navbar-brand{font-family:var(--font-bold);color:var(--color-black)}.navbar-brand svg{padding:1px;margin-bottom:4px}.navbar-toggler{outline:0!important;box-shadow:none!important}.navbar-toggler{border:0!important}.navbar-toggler-icon:focus,.navbar-toggler:active,.navbar-toggler:focus{outline:0!important;box-shadow:none!important;border:0!important}.toggler-icon{width:30px;height:3px;background-color:var(--bg-dark);display:block;transition:all .2s}.middle-bar{margin:5px auto}.navbar-toggler .top-bar{transform:rotate(45deg);transform-origin:10% 10%}.navbar-toggler .middle-bar{opacity:0}.navbar-toggler .bottom-bar{transform:rotate(-45deg);transform-origin:10% 90%}.navbar-toggler.collapsed .top-bar{transform:rotate(0)}.navbar-toggler.collapsed .middle-bar{opacity:1}.navbar-toggler.collapsed .bottom-bar{transform:rotate(0)}.navbar-toggler.collapsed .toggler-icon{background-color:var(--bg-dark)}.nav-link.active{font-family:var(--font-bold)}.form-check-input:focus{box-shadow:none}
+
+/*
+ *  Hero
+ *  Copyright 2017-2022 MGSWID.
+ */
+.avatar img{max-width:145px;-webkit-filter:grayscale(100%);filter:grayscale(100%)}.avatar img:hover{-webkit-filter:grayscale(0%);filter:grayscale(0%);transition:all ease-in-out .2s}
+
+/*
+ *  Cards
+ *  Copyright 2017-2022 MGSWID.
+ */
+.card{border:none}.gradient-border-blue{--borderWidth:3px;background:var(--bg-light);position:relative;border-radius:var(--borderWidth)}.gradient-border-blue:after{content:'';position:absolute;top:calc(-1 * var(--borderWidth));left:calc(-1 * var(--borderWidth));height:calc(100% + var(--borderWidth) * 2);width:calc(100% + var(--borderWidth) * 2);background:linear-gradient(60deg,#0061ff,#60efff);border-radius:calc(2 * var(--borderWidth));z-index:-1;-webkit-animation:animatedgradient 3s ease alternate infinite;animation:animatedgradient 3s ease alternate infinite;background-size:300% 300%}.gradient-border-green{--borderWidth:3px;background:var(--bg-light);position:relative;border-radius:var(--borderWidth)}.gradient-border-green:after{content:'';position:absolute;top:calc(-1 * var(--borderWidth));left:calc(-1 * var(--borderWidth));height:calc(100% + var(--borderWidth) * 2);width:calc(100% + var(--borderWidth) * 2);background:linear-gradient(60deg,#7ef29d,#0f68a9);border-radius:calc(2 * var(--borderWidth));z-index:-1;-webkit-animation:animatedgradient 3s ease alternate infinite;animation:animatedgradient 3s ease alternate infinite;background-size:300% 300%}.gradient-border-orange{--borderWidth:3px;background:var(--bg-light);position:relative;border-radius:var(--borderWidth)}.gradient-border-orange:after{content:'';position:absolute;top:calc(-1 * var(--borderWidth));left:calc(-1 * var(--borderWidth));height:calc(100% + var(--borderWidth) * 2);width:calc(100% + var(--borderWidth) * 2);background:linear-gradient(60deg,#e9d022,#e60b09);border-radius:calc(2 * var(--borderWidth));z-index:-1;-webkit-animation:animatedgradient 3s ease alternate infinite;animation:animatedgradient 3s ease alternate infinite;background-size:300% 300%}@-webkit-keyframes animatedgradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes animatedgradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+/*
+ *  Languages & Tools
+ *  Copyright 2017-2022 MGSWID.
+ */
+.language-tools img{max-width:24px}
+
+/*
+ *  Footer
+ *  Copyright 2017-2022 MGSWID.
+ */
+footer .nav-link{font-family:var(--font-medium)}footer .copyright{font-size:12px;letter-spacing:1px}@media (max-width:576px){footer .nav-link{font-size:15px}}
+
+/*
+ *  About Page
+ *  Copyright 2017-2022 MGSWID.
+ */
+.list-group .list-group-item a{margin-right:1rem}.list-group-item.game{border:none;padding:.5rem 0;background-color:var(--bg-light)}
+
+/*
+ *  Portofolio Page
+ *  Copyright 2017-2022 MGSWID.
+ */
+.modal-backdrop.show{opacity:.75}
+
+/*
+ *  Blog Page
+ *  Copyright 2017-2022 MGSWID.
+ */
+.list-group-item.blog{border-top:none;border-right:none;border-bottom:solid 1px #EEE;border-left:none;border-radius:0;padding:.5rem 0;background-color:var(--bg-light)}.list-group-item.blog:last-child{border-bottom:none}
