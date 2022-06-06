@@ -2,7 +2,7 @@
 # Halo 👋
 Static Personal Website. Built with pure HTML, CSS & JS. [Link to demo](https://mgswid.github.io)
 
-![App Screenshot](https://imgur.com/CyvDhSr.jpg)
+![App Screenshot](https://imgur.com/51Oh8Mt.png)
 
 ## Features
 - [x]  Light / Dark Toggle
